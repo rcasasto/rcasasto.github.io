@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" type="text/css" href="./css/hojacss.css">
+</head>
+<body>
+    
+    <header>
+        
+        <nav id="menu">
+            <div id="logo">
+                <img src="./img/logo.jpeg" height="100" width="150" alt="logo">
+            </div>
+            <ul>
+               <li class="categoria"><a href="./index.html">Inicio</a></li>
+               <li class="categoria">Ribera
+                <ul>
+                   <li class="subcategoria"> <a href="./unico.html">Único</a></li>
+                    <li class="subcategoria"><a href="*">Valbuena</a></li>
+                    
+                </ul>
+            </li>
+            <li class="categoria">Toro
+                <ul>
+                   <li class="subcategoria"> <a href="./pintia.html">Pintia</a></li>
+                    
+                    
+                </ul>
+            </li>
+            <li class="categoria"><a href="./formulario.html">Reservar visita</a></li>
+            </ul>
+
+        </nav>
+    
+    </header>
+    <div id="hoja">
+    <h1>RESERVA PARA VISITAR NUESTRA BODEGA</h1>
+    <br>
+
+    <h3>Formulario para la reserva de la visita</h3>
+    <form>
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre"> 
+        <br>
+        <br>
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos"> 
+        <br>
+        <br>
+        <label for="correo">Correo electronico</label>
+        <input type="text" id="correo">
+        <br>
+        <br>
+        <label for="bodega">Nuestra bodega que desea visitar</label>
+        <select name="bodega" id="bodega">
+            <option value="vegasicilia">Vega Sicilia</option>
+            <option value="pintia">Pintia</option>
+            <option value="alion">Alion</option>
+            <option value="macan">Macán</option>
+            <option value="tokaj">Tokaj</option>
+        </select>∫
+        <br>
+        <br>
+        <p>Tipo de cata</p>
+        <input type="radio" id="basica" name="cata" value="basica">
+        <label for="basica">Basica</label>
+        <input type="radio" id="especial" name="cata" value="especial">
+        <label for="especial">Especial</label>
+        <input type="radio" id="premium" name="cata" value="premium">
+        <label for="premium">Premium</label>
+        <br>
+        <br>
+        <p>Selecciona la fecha para la que desea reservar</p>
+        <input type="date">
+        <br>
+        <br>
+        <label for="personas">Numero de personas(Entre 1 y 6 por medidas COVID)</label>
+        <input type="number" id="personas" min="1" max="6">
+
+
+
+    </fieldset>
+    <br>
+    <input type="submit" value="RESERVAR">
+</form>
+<br>
+<p>Si desea ver mas información sobre nuestras bodegas para elegir una, mire <a href=https://www.temposvegasicilia.com/es/presentacion/bodegas>aqui</a>.</p>
+
+  </div>  
+    
+</body>
+</html>
